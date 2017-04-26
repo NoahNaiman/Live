@@ -1,0 +1,48 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BostonHacks Live</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+    window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+        return t;
+    }(document, "script", "twitter-wjs"));
+    </script>
+</head>
+<header>
+    <div class="header">
+        <div class="column small-9 title">
+            <span>//BostonHacks 2015</span>
+        </div>
+        <div class="column small-3 live text-right">
+            <span>&#8201;Live</span>
+            <div class="collapse-button text-left" onclick="collapse()">&#9776;</div>
+        </div>
+        <div class="columns small-12 sections">
+            <div class="collapse">
+                <a href="index.html"><span class="active">HOME</span></a>
+                <a href="map.html"><span>MAP</span></a>
+                <a href="schedule.html"><span>SCHEDULE</span></a>
+                <a href="prizes.html"><span>PRIZES</span></a>
+                <a href="hardware.html"><span>HARDWARE</span></a>
+                <a href="travel.html"><span>TRAVEL</span></a>
+                <a href="faq.html"><span>FAQ</span></a>
+                <a href="judging.html"><span>JUDGING</span></a>
+            </div>
+        </div>
+    </div>
+</header>
