@@ -4,58 +4,37 @@
 <% include partials/head %>
 
 <body>
-    <section class="section-title text-center">
-        <div class="page-title">LIVE PAGE<a target="_blank" href="http://rocketleague.bostonhacks.io"><i class="fa fa-rocket"></i></a></div>
-    </section>
-    <section class="announcments row">
-        <div class="twitter column small-12 medium-6 text-left">
-            <div class="sub-title">
-                <h1>@boston_hacks</h1>
-            </div>
-            <div class="grey-background text-center">
-                <a class="twitter-timeline" data-widget-id="600720083413962752" href="https://twitter.com/boston_hacks" data-screen-name="boston_hacks" height="400px" width="80%" link-color="#E51F63" data-chrome=" noborders noscroll transparent">
-            Tweets by @boston_hacks
-            </a>
-            </div>
-        </div>
-        <div class="dark-title columns small-12 medium-6">
-            <div class="sub-title">
-                <h1>Info</h1>
-            </div>
-            <div class="grey-background">
-                <div><span class="semi-bold">Wifi:</span> BU Events Guest</div>
-                <div><span class="semi-bold">Password:</span> H4ckA!!D4y</div>
-                <div>
-                    <a href="https://bostonhacks17.slack.com/messages/mentors/">
-                        <i class="fa fa-question"></i>&nbsp; Mentors</a>
-                </div>
-                <div>
-                    <a href="https://bostonhacks17.slack.com/messages/help/">
-                        <i class="fa fa-child"></i>&nbsp; Help</a>
-                </div>
-                <div>
-                    <a href="http://bostonhacks.devpost.com/">
-                        <i class="fa fa-cog"></i>&nbsp; Project Submission</a>
-                </div>
-                <br>
-                <div>
-                    <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:contact@bostonhacks.io">contact@bostonhacks.io</a>
-                    <br>
-                    <i class="fa fa-cab"></i>&nbsp; Boston University Police: <a href="tel:617-353-2121">617-353-2121</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="info">
-        <div class="row social">
-            <!--             <div class="columns small-4 text-center"><a href="https://www.facebook.com/bostonhacks"><i class="fa fa-facebook"></i></a></div>
-            <div class="columns small-4 text-center"><a href="https://www.twitter.com/boston_hacks"><i class="fa fa-twitter"></i></a></div>
-            <div class="columns small-4 text-center"><a href="https://bostonhacks.slack.com/signup"><i class="fa fa-slack"></i></a></div> -->
-        </div>
+    <div class="section-title text-center">
+        <div class="page-title">HOME</div>
+    </div>
 
+    <section class="home row">
+        <% include partials/home %>
     </section>
+
+    <section class="map" style="display: none">
+        <% include partials/map %>
+    </section>
+
+    <section class="schedule" style="display: none">
+        <% include partials/schedule %>
+    </section>
+
+    <section class="hardware" style="display: none">
+        <% include partials/hardware %>
+    </section>
+
+    <section class="travel" style="display: none">
+        <% include partials/travel %>
+    </section>
+
+    <section class="judging" style="display: none">
+        <% include partials/judging %>
+    </section>
+
 </body>
 
+<br>
 <% include partials/footer %>
 
 </html>

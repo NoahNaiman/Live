@@ -18,6 +18,11 @@ function collapse(){
 }
 
 function faq(selected){
+    if (selected.className.indexOf("active") !== -1) {
+        selected.className = "faq-question";
+        return
+    }
+
     var els = $(".faq-question");
     for (var i = 0; i <= els.length - 1; i++) {
         els[i].className = "faq-question";
@@ -35,4 +40,26 @@ function map(id){
     buttons[floors.length - 1 - id].className += " active";
     floors[id].className = "active";
     // console.log(".floors span");
+}
+
+
+function nav(selected){
+    var els = $(".nav-item");
+    for (var i = 0; i <= els.length - 1; i++) {
+        els[i].className = "nav-item";
+    }
+    selected.className += " active";
+
+    var navigationViews = ["home", "map", "schedule", "hardware", "travel", "judging"]
+    
+    $('.page-title')[0].innerText = selected.innerText
+
+    for (var i = 0; i < navigationViews.length; i++) {
+
+        if(selected.innerText.toLowerCase() == navigationViews[i]) {
+            $("." + navigationViews[i])[0].style.display = 'block';
+        } else {
+            $("." + navigationViews[i])[0].style.display = 'none';
+        }
+    }
 }
