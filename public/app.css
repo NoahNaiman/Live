@@ -3069,8 +3069,8 @@ section a {
 section a:hover {
   color: #E51F63; }
 
-.page-title {
-  margin: 1rem 0; }
+/*.page-title {
+  margin: 1rem 0; }*/
 
 footer {
   width: 100%;
@@ -3468,17 +3468,16 @@ section.map .floors-buttons {
     border-right-color: rgba(225, 225, 225, 0); }
   section.map .floors-buttons div.active {
     color: #ffffff; }
-  section.map .floors-buttons div.active::after {
+/*  section.map .floors-buttons div.active::after {
     content: "//";
     color: #ffffff;
-    /* color: #E51F63; */
     font-size: 55px;
     position: absolute;
     right: 109px;
     height: 70px;
     width: 140px;
     z-index: -1;
-    margin-top: -37px; }
+    margin-top: -37px; }*/
   section.map .floors-buttons div.active::before {
     content: "";
     position: absolute;
@@ -3495,8 +3494,8 @@ section.map .floors div.active {
   display: block; }
 
 section.map .floors img {
-  width: 400px;
-  height: auto; }
+  height: 400px;
+  width: auto; }
 
 section.map .mapkey {
   width: 100%;
